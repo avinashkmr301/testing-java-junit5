@@ -27,16 +27,4 @@ class PersonTest implements ModelTest {
                 ()-> assertEquals("Sinha", person.getLastName(),"Last name not matching"));
     }
 
-    @RepeatedTest(value = 10, name = "{displayName}: {currentRepetition} - {totalRepetitions}")
-    @DisplayName("My Repeated Test")
-    void myRepeatedTest(){
-        //todo-impl
-    }
-
-
-    //Dependency injection
-    @RepeatedTest(5)
-    void myRepeatedTestWithDI(TestInfo testInfo, RepetitionInfo repetitionInfo){
-        System.out.println(testInfo.getDisplayName() + " : " + repetitionInfo.getCurrentRepetition());
-    }
 }
