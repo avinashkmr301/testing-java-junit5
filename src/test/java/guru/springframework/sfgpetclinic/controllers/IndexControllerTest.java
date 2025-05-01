@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.controllers;
 
+import guru.springframework.sfgpetclinic.ControllerTest;
 import guru.springframework.sfgpetclinic.exception.ValueNoteFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -11,7 +12,7 @@ import java.time.Duration;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-class IndexControllerTest {
+class IndexControllerTest implements ControllerTest {
 
     private IndexController indexController;
     @BeforeEach
